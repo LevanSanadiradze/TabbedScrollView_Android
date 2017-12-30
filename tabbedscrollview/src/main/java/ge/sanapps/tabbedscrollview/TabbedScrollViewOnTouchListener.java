@@ -22,6 +22,7 @@ public abstract class TabbedScrollViewOnTouchListener implements OnTouchListener
                 lastX = event.getX();
                 lastY = event.getY();
                 break;
+            case MotionEvent.ACTION_CANCEL:
             case MotionEvent.ACTION_UP:
                 if(wasDown)
                     onMoveStop();
