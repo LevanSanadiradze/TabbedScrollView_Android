@@ -5,13 +5,13 @@ import android.util.AttributeSet;
 import android.widget.ScrollView;
 
 /**
- * Created by root on 12/30/17.
+ * Created by Levan Sanadiradze on 12/30/17.
  */
 
 public class TabbedVerticalScrollView extends ScrollView {
 
-    private int stepSize = 180;
-    private double scrollStrength = 3.0;
+    private int stepSize = 100;
+    private double scrollStrength = 5.0;
 
     private double remain = 0;
 
