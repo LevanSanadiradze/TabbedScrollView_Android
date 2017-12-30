@@ -3,7 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/TabbedScrollViewExample.iml" filepath="$PROJECT_DIR$/TabbedScrollViewExample.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TabbedScrollView_Android.iml" filepath="$PROJECT_DIR$/TabbedScrollView_Android.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/tabbedscrollview/tabbedscrollview.iml" filepath="$PROJECT_DIR$/tabbedscrollview/tabbedscrollview.iml" />
       <module fileurl="file://$PROJECT_DIR$/tabbedscrollview/tabbedscrollview.iml" filepath="$PROJECT_DIR$/tabbedscrollview/tabbedscrollview.iml" />
     </modules>
   </component>

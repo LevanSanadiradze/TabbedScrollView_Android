@@ -2,6 +2,7 @@ package ge.sanapps.tabbedscrollview;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.view.View;
 import android.widget.ScrollView;
 
 /**
@@ -66,6 +67,14 @@ public class TabbedVerticalScrollView extends ScrollView {
         };
 
         setOnTouchListener(HSVL);
+
+        setOnFocusChangeListener(new OnFocusChangeListener() {
+            @Override
+            public void onFocusChange(View view, boolean b) {
+                if(!b)
+                    onMoveStop();
+            }
+        });
     }
 
     private void onMoveUpDown(float dY)
