@@ -83,4 +83,9 @@ public class TabbedHorizontalScrollView extends HorizontalScrollView {
         int newX = (int)Math.round((double) getScrollX() / (double)stepSize) * stepSize;
         smoothScrollTo(newX, 0);
     }
+
+    public void snap()
+    {
+        onMoveStop();
+    }
 }
