@@ -41,7 +41,7 @@ public abstract class TabbedScrollViewOnTouchListener implements OnTouchListener
                 break;
         }
 
-        return true;
+        return false;
     }
 
     public abstract void onMoveSidewards(float dX);

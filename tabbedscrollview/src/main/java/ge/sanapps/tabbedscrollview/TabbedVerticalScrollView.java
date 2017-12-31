@@ -83,9 +83,4 @@ public class TabbedVerticalScrollView extends ScrollView {
         int newY = (int)Math.round((double) getScrollY() / (double)stepSize) * stepSize;
         smoothScrollTo(0, newY);
     }
-
-    public void snap()
-    {
-        onMoveStop();
-    }
 }
