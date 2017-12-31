@@ -67,14 +67,6 @@ public class TabbedHorizontalScrollView extends HorizontalScrollView {
         };
 
         setOnTouchListener(HSVL);
-
-        setOnFocusChangeListener(new OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View view, boolean b) {
-                if(!b)
-                    onMoveStop();
-            }
-        });
     }
 
     private void onMoveSidewards(float dX)
@@ -90,5 +82,10 @@ public class TabbedHorizontalScrollView extends HorizontalScrollView {
     {
         int newX = (int)Math.round((double) getScrollX() / (double)stepSize) * stepSize;
         smoothScrollTo(newX, 0);
+    }
+
+    public void snap()
+    {
+        onMoveStop();
     }
 }

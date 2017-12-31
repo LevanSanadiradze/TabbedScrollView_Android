@@ -67,14 +67,6 @@ public class TabbedVerticalScrollView extends ScrollView {
         };
 
         setOnTouchListener(HSVL);
-
-        setOnFocusChangeListener(new OnFocusChangeListener() {
-            @Override
-            public void onFocusChange(View view, boolean b) {
-                if(!b)
-                    onMoveStop();
-            }
-        });
     }
 
     private void onMoveUpDown(float dY)
@@ -90,5 +82,10 @@ public class TabbedVerticalScrollView extends ScrollView {
     {
         int newY = (int)Math.round((double) getScrollY() / (double)stepSize) * stepSize;
         smoothScrollTo(0, newY);
+    }
+
+    public void snap()
+    {
+        onMoveStop();
     }
 }
