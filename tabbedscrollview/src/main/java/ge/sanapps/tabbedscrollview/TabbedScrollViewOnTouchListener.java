@@ -22,6 +22,7 @@ public abstract class TabbedScrollViewOnTouchListener implements OnTouchListener
                 lastX = event.getX();
                 lastY = event.getY();
                 break;
+            case MotionEvent.ACTION_OUTSIDE:
             case MotionEvent.ACTION_CANCEL:
             case MotionEvent.ACTION_UP:
                 if(wasDown)
@@ -41,7 +42,7 @@ public abstract class TabbedScrollViewOnTouchListener implements OnTouchListener
                 break;
         }
 
-        return false;
+        return true;
     }
 
     public abstract void onMoveSidewards(float dX);
