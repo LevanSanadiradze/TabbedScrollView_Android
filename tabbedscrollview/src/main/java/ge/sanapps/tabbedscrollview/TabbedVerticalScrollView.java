@@ -88,4 +88,14 @@ public class TabbedVerticalScrollView extends ScrollView {
     {
         onMoveStop();
     }
+
+    public void MoveTo(int i, boolean smooth)
+    {
+        if(smooth)
+            smoothScrollTo(0, stepSize * i);
+        else
+            scrollTo(0, stepSize * i);
+
+        snap();
+    }
 }
