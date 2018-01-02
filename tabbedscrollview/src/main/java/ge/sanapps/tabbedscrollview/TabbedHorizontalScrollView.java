@@ -88,4 +88,14 @@ public class TabbedHorizontalScrollView extends HorizontalScrollView {
     {
         onMoveStop();
     }
+
+    public void MoveTo(int i, boolean smooth)
+    {
+        if(smooth)
+            smoothScrollTo(stepSize * i, 0);
+        else
+            scrollTo(stepSize * i, 0);
+
+        snap();
+    }
 }
