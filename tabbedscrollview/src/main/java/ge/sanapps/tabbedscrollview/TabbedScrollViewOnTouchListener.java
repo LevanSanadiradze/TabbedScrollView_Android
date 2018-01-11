@@ -31,10 +31,12 @@ public abstract class TabbedScrollViewOnTouchListener implements OnTouchListener
                 break;
             case MotionEvent.ACTION_MOVE:
                 if(wasDown) {
-                    if(Math.abs(event.getX() - lastX) >= Math.abs(event.getY() - lastY))
-                        onMoveSidewards(event.getX() - lastX);
-                    else
-                        onMoveUpDown(event.getY() - lastY);
+//                    if(Math.abs(event.getX() - lastX) >= Math.abs(event.getY() - lastY))
+//                        onMoveSidewards(event.getX() - lastX);
+//                    else
+//                        onMoveUpDown(event.getY() - lastY);
+                    onMoveSidewards(event.getX() - lastX);
+                    onMoveUpDown(event.getY() - lastY);
                 }
                 wasDown = true;
                 lastX = event.getX();
